@@ -71,7 +71,7 @@ export class Level {
     return this.getTile(row, col) === 'WALL';
   }
 
-  public canPass(row: number, col: number, isGhost: boolean, isEaten: boolean): boolean {
+  public canPass(row: number, col: number, _isGhost: boolean, _isEaten: boolean): boolean {
     const tile = this.getTile(row, col);
     if (tile === 'WALL') return false;
     // Gates are now passable by everyone
